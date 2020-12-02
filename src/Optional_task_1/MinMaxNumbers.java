@@ -1,3 +1,5 @@
+package Optional_task_1;
+
 import java.util.Scanner;
 
 

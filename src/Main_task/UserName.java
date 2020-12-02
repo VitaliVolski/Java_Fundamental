@@ -1,3 +1,5 @@
+package Main_task;
+
 import java.util.Scanner;
 
 public class UserName {
