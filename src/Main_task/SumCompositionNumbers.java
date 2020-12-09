@@ -1,26 +1,21 @@
 package Main_task;
 
-import java.util.Scanner;
 
 public class SumCompositionNumbers {
 
-    public static void main(String [] args) {
-        Scanner num = new Scanner(System.in);
-        int first, second, third, sum;
+    public static void main(String[] args) {
 
-        System.out.println("Enter first number:");
-        first = num.nextInt();
+        int sum = 0;
+        int composition = 1;
 
-        System.out.println("Enter second number:");
-        second = num.nextInt();
+        for (int i = 0; i < args.length; i++) {
 
-        System.out.println("Enter third number:");
-        third = num.nextInt();
+            int numbers = Integer.parseInt(args[i]);
+            sum = sum + Integer.parseInt(args[i]);
+            composition = composition * Integer.parseInt(args[i]);
+        }
 
-        sum= first+second+third;
-        int comp = first * second * third;
-
-        System.out.println("result is -"+ " " + sum);
-        System.out.println("result is -"+ " " + comp);
+        System.out.println("sum is - " + sum);
+        System.out.println("composition is - " + composition);
     }
 }
