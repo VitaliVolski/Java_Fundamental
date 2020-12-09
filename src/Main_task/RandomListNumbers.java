@@ -8,16 +8,18 @@ public class RandomListNumbers {
 
     public static void main(String[] args) {
 
-        int[] array = new int[5];
         Random random = new Random();
+        int[] array = new int[5];
 
+        System.out.println("Numbers with a new line");
         for (int i = 0; i < array.length; i++) {
-            array [i] = (int) random.nextInt(10);
+            array [i] = random.nextInt(10);
             System.out.println(array [i]);}
 
+        System.out.println("Numbers in line");
         for (int i = 0; i < array.length; i++) {
-            array [i] = (int) random.nextInt(10);
-            System.out.print(array [i]);
+            array [i] = random.nextInt(10);
+            System.out.print(array [i] + "  ");
         }
     }
 }
