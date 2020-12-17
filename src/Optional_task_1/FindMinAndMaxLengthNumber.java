@@ -3,7 +3,7 @@ package Optional_task_1;
 import java.util.Scanner;
 
 
-public class MinMaxNumbers {
+public class FindMinAndMaxLenghtNumber {
 
     public static void main (String[] args) {
 

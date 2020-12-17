@@ -10,7 +10,6 @@ public class SumCompositionNumbers {
 
         for (int i = 0; i < args.length; i++) {
 
-            int numbers = Integer.parseInt(args[i]);
             sum = sum + Integer.parseInt(args[i]);
             composition = composition * Integer.parseInt(args[i]);
         }
