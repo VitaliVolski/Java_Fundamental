@@ -13,19 +13,19 @@ public class FindMinAndMaxNumberAndItLengthValue {
         String numbers = scanner.nextLine();
         System.out.println("Input numbers: " + numbers);
 
-        String minLength = numbers;
-        String maxLength = "";
+        String shortNumber = numbers;
+        String longNumber = "";
 
-        for (String temp : numbers.split(" ")){
-            if (temp.length () < minLength.length())
-                minLength = temp;
-            if (temp.length() > maxLength.length())
-                maxLength = temp;
+        for (String number : numbers.split(" ")){
+            if (number.length () < shortNumber.length())
+                shortNumber = number;
+            if (number.length() > longNumber.length())
+                longNumber = number;
         }
-        System.out.println("Number with minimum size: " + minLength
-                + "; It's length = " + minLength.length());
-        System.out.println("Number with maximum size: " + maxLength
-                + "; It's length = " + maxLength.length());
+        System.out.println("Number with minimum size: " + shortNumber
+                + "; It's length = " + shortNumber.length());
+        System.out.println("Number with maximum size: " + longNumber
+                + "; It's length = " + longNumber.length());
     }
 }
 
